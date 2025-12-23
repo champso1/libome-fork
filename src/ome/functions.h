@@ -306,9 +306,7 @@ namespace ome
        */
       numeric_type operator()(numeric_type x, Trest... rest) const
       {
-        using std::log;
-        return(target_function_(log(static_cast<numeric_type>(1)-x), rest...)
-            / (static_cast<numeric_type>(1)-x));
+        return(target_function_(0.0, rest...));
       };
 
       /**
