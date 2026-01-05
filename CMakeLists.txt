@@ -10,7 +10,7 @@ project(libome
 )
 set(CMAKE_CXX_STANDARD 17)
 include(GNUInstallDirs)
-option(BUILD_SHARED_LIBS "Build using shared libraries" ON)
+option(BUILD_SHARED_LIBS "Build using shared libraries" OFF)
 
 # Select "Release" build by default to enable optimisation
 if(NOT CMAKE_BUILD_TYPE)
