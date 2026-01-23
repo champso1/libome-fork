@@ -30,6 +30,7 @@ if(ENABLE_FPES)
   add_compile_options("$<$<COMPILE_LANG_AND_ID:CXX,Clang>:-ffp-exception-behavior=maytrap>")
   add_compile_options("$<$<COMPILE_LANG_AND_ID:CXX,AppleClang>:-ffp-exception-behavior=maytrap>")
 endif()
+add_compile_options(-Wno-unused-comparison)
 
 
 # Main code tree
